@@ -11,5 +11,7 @@
   connection: local
   tasks:
   - name: Calling Variables through Args
+    vars:
+      name: uname
     ansible.builtin.debug:
       msg: "User name: {{ uname }}"
