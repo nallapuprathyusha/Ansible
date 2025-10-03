@@ -1,0 +1,12 @@
+- name: vars from task
+  hosts: local
+  connection: local
+
+  tasks:
+  - name: printing task level variables
+    vars:
+      emp_name: Prathyusha
+      employee_profression: Devops engineer
+      employee_exp: 4 years
+    ansible.builtin.debug:
+      msg: "employee_name: {{ emp_name }} employee_profression: {{ profression }} employee_exp: {{ exp }}" 
