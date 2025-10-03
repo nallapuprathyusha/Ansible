@@ -4,6 +4,7 @@
 
   vars_files:
   - variable.yaml
+  tasks:
   ansible.builtin.debug:
     msg: " {{emp_name }} : {{ emp_prof }} "
 
