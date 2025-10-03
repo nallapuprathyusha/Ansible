@@ -11,10 +11,10 @@
     topics: #directory or map
       Cloud : AWS
       cm : ansible
-    tasks:
-    - name: printing course info
-      ansible.builtin.debug:
-        msg: "couse: {{ course_name }}, Duration: {{  Duration }} tools: {{ tools }} topics: {{ topics }} "
+  tasks:
+  - name: printing course info
+    ansible.builtin.debug:
+      msg: "couse: {{ course_name }}, Duration: {{  duration }} tools: {{ tools }} topics: {{ topics }} "
 
 
   
