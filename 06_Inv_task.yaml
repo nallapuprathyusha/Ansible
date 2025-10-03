@@ -4,5 +4,5 @@
 
   tasks:
   - name: calling from Inventory
-    msg: "{{ emp_name }} : {{ emp_prof }} : {{ emp_exp}}"
+    msg: "{{ emp_name }} : {{ emp_prof }} : {{ emp_exp }}"
   
