@@ -2,13 +2,13 @@
   hosts: local
   connection: local
   vars:
-    test: play_Variables
-  vars_prompt:
-    - name: test
-      prompt: what is your name
-      private: false
+    NAME: from playy level
   vars_files:
     - variable.yaml
+  vars_prompt:
+    - name: NAME
+      prompt: what is your name
+      private: false
   tasks:
   - name: Testing variable sequence
     ansible.builtin.debug:
