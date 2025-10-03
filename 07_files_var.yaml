@@ -1,0 +1,9 @@
+- name: Files variables
+  hosts: local
+  connection: local
+
+  vars_files:
+  - variable.yaml
+  ansible.builtin.debug:
+    msg: " {{emp_name }} : {{ emp_prof }} "
+
