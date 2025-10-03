@@ -5,12 +5,12 @@
   - name: emp_name
     prompt: enter employee_name
     private: false
-  - name: emp_prof
-    prompt: enter employee_prof
-    private: false
+  # - name: emp_prof
+  #   prompt: enter employee_prof
+  #   private: false
 
   tasks:
     - name: calling from prompt 
       ansible.builtin.debug:
-        msg: "employee_name is {{ name }} empl_prof is {{ emp_prof }}"
+        msg: "employee_name is {{ name }}"
       
