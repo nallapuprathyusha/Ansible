@@ -1,6 +1,7 @@
 - name: printing packages in Loops
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: print packages
     ansible.builtin.package:
