@@ -9,4 +9,4 @@
       employee_profression: Devops engineer
       employee_exp: 4 years
     ansible.builtin.debug:
-      msg: "employee_name: {{ emp_name }} employee_profression: {{ profression }} employee_exp: {{ exp }}" 
+      msg: "employee_name: {{ emp_name }} employee_profression: {{ employee_profression }} employee_exp: {{ exp }}" 
