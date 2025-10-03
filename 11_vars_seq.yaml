@@ -12,5 +12,4 @@
   tasks:
   - name: Testing variable sequence
     ansible.builtin.debug:
-
       mes: " {{emp_name }} {{ emp_prof }}"
