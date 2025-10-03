@@ -1,0 +1,7 @@
+- name: variable Practice
+  hosts: local
+  connection: local
+  tasks:
+  - name: calling from variables through arg
+    ansible.builtin.debug:
+      msg: " user name: {{ uname }} "
