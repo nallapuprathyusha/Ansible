@@ -4,7 +4,7 @@
 
   vars_files:
   - variable.yaml 
-  - variable_task
+  - variable_task.yaml
   tasks:
   - name: callig from another file
     ansible.builtin.debug:
