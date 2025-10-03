@@ -1,8 +1,8 @@
 - name: variables in sequence
   hosts: local
   connection: local
-  vars:
-    test: play_variable
+  # vars:
+  #   test: play_variable
   # vars_prompt:
   #   - name: test
   #     prompt: what is your name?
@@ -15,3 +15,9 @@
     #   test: task_variable
     ansible.builtin.debug:
       msg: "Printing the variable: {{ test }}"
+
+
+  #task level
+  #file 
+  #prompt
+  #play level
