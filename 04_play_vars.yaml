@@ -7,7 +7,7 @@
     exp: 4 years
   tasks:
   - name: calling playbooks variables
-    ansible.bulitin.debug:
+    ansible.builtin.debug:
       msg: "employee_name: {{ name }} employee_profression: {{ profression }} employee_exp: {{ exp }}"
 
       
