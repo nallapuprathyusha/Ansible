@@ -8,6 +8,6 @@
   tasks:
     - name: calling playbook variables
       ansible.bulitin.debug:
-        msg:  employee_name: {{ name }} employee_profression: {{ profression }} employee_exp: {{ exp }}
+        msg:  " employee_name: {{ name }} employee_profression: {{ profression }} employee_exp: {{ exp }} "
 
       
