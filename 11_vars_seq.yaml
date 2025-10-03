@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-  test: play_Variables
+    test: play_Variables
   vars_prompt:
     - name: test
       prompt: what is your name
@@ -12,5 +12,5 @@
   tasks:
   - name: Testing variable sequence
     ansible.builtin.debug:
-    
+
       mes: " {{emp_name }} {{ emp_prof }}"
