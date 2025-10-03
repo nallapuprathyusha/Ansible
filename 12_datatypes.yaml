@@ -1,0 +1,20 @@
+- name: data types
+  hosts: local
+  connection: local
+  vars:
+    course_name: Devops #string
+    duration: 120 #nuber
+    is_online_live: true #boolean
+
+    #list
+    tools: ["ansible", "Kubernetes", "Docker"]
+    topics: #directory or map
+      Cloud : AWS
+      cm : ansible
+    tasks:
+    - name: printing course info
+      ansible.builtin.debug:
+        msg: "couse: {{ course_name }}, Duration: {{  Duration }} tools: {{ tools }} topics: {{ topics }} "
+
+
+  
