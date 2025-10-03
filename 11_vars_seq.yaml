@@ -3,10 +3,10 @@
   connection: local
   vars:
     test: play_variable
-  vars_prompt:
-    - name: test
-      prompt: what is your name?
-      private: false
+  # vars_prompt:
+  #   - name: test
+  #     prompt: what is your name?
+  #     private: false
   # vars_files:
   # - variable.yaml
   tasks:
