@@ -1,0 +1,14 @@
+- name: conditions Practice
+  hosts: local
+  connection: local
+
+  vars_prompt:
+    name: number
+    prompt: enter the number
+    private: false
+  tasks:
+    - name : checkinh number is less than 10 or not
+      ansible.builtin.debug:
+        msg: given number {{ number }} is less than 10
+      when: number < 10
+
