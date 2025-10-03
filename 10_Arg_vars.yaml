@@ -10,7 +10,7 @@
   hosts: local
   connection: local
   tasks:
-    name: Calling Variables through Args
+  - name: Calling Variables through Args
     vars:
       name: uname
     ansible.builtin.debug:
