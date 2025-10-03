@@ -4,11 +4,9 @@
 
   vars_files:
   - variable.yaml 
-  - variable_task.yaml
   tasks:
   - name: callig from another file
     ansible.builtin.debug:
       msg: " {{emp_name }} : {{ emp_prof }} "
-    ansible.builtin.debug:
-      msg+: " {{ team }} : {{ lead_name }}"
+    
 
