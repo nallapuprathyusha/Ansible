@@ -1,5 +1,5 @@
 - name: nginx setup
-  host: local
+  hosts: local
   connection: local
   become: yes
 
