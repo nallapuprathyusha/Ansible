@@ -11,7 +11,7 @@
   - variable.yaml
   tasks:
   - name: Testing Variable Sequence
-    vars:
-      test: task_variable
+    # vars:
+    #   test: task_variable
     ansible.builtin.debug:
       msg: "Printing the variable: {{ test }}"
