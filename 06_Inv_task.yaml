@@ -1,0 +1,8 @@
+- name: Inventory variables
+  hosts: local
+  connection: local
+
+  tasks:
+  - name: calling from Inventory
+    msg: "{{ emp_name }} : {{ emp_prof }} : {{ emp_exp}}"
+  
