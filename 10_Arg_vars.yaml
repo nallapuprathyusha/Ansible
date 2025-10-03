@@ -4,4 +4,4 @@
   tasks:
   - name: calling from variables through arg
     ansible.builtin.debug:
-      msg: " user name: {{ uname }} "
+      msg: " user name: {{ name }} "
