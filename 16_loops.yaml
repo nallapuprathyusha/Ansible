@@ -3,10 +3,9 @@
   connection: local
   tasks:
   - name: Loop_conditons
-    number: 5
     ansible.builtin.debug:
       msg: "count: {{ item }}"
-    loop:
-    - number  
+    loop: "{{ range(1, 6) }}"
+   
 
 
