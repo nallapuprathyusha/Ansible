@@ -8,9 +8,10 @@
       ansible.builtin.package:
         name: nginx
         state: present #to install the app
+    
     - name: starting nginx service
       ansible.builtin.service:
         name: nginx
         state: started
-        enable: yes
+        enabled: yes
   
