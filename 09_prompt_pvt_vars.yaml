@@ -1,0 +1,19 @@
+- name: prompt variables
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: emp_name
+    prompt: enter employee_name
+    private: false
+  - name: emp_prof
+    prompt: enter employee_prof
+    private: false
+  - name: emp_password
+    prompt: enter employee_passwd
+    private: true
+
+  tasks:
+    - name: calling from prompt 
+      ansible.builtin.debug:
+        msg: "employee_name is {{ emp_name }} employee_exp is {{ emp_prof }} "
+      
