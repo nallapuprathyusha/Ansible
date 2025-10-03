@@ -8,7 +8,7 @@
       prompt: what is your name
       private: false
   vars_files:
-    - Variable.yaml
+    - variable.yaml
   tasks:
   - name: Testing variable sequence
     ansible.builtin.debug:
