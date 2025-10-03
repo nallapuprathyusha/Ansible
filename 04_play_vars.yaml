@@ -1,0 +1,13 @@
+- name: playing with variables
+  host: local
+  connection: local
+  vars:
+      name: prathyusha
+      profression: Devops engineer
+      exp: 4 years
+  tasks:
+    - name: calling playbook variables
+      ansible.bulitin.debug:
+        msg:  employee_name: {{ name }} employee_profression: {{ profression }} employee_exp: {{ exp }}
+
+      
