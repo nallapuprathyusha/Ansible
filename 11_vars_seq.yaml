@@ -3,13 +3,13 @@
   connection: local
   vars:
     test: play_Variables
-  # vars_prompt:
-  #   - name: test
-  #     prompt: what is your name
-  #     private: false
+  vars_prompt:
+    - name: test
+      prompt: what is your name
+      private: false
   vars_files:
     - variable.yaml
   tasks:
   - name: Testing variable sequence
     ansible.builtin.debug:
-      mes: " {{emp_name }} {{ emp_prof }}"
+      msg: " {{emp_name }} {{ emp_prof }}"
