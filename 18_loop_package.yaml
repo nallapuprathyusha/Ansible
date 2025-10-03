@@ -1,11 +1,10 @@
 - name: printing packages in Loops
   hosts: local
   connection: local
-
   tasks:
-  -name : print packages
-  ansible.builtin.debug:
-    msg: " package installed: {{ item }} "
-  loop:
-  - nginx
-  - nodejs
+  - name : print packages
+    ansible.builtin.debug:
+      msg: " package installed: {{ item }} "
+    loop:
+    - nginx
+    - nodejs
