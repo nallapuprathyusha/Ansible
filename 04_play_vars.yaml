@@ -2,12 +2,12 @@
   hosts: local
   connection: local
   vars:
-    name: prathyusha
+    emp_name: prathyusha
     profression: Devops engineer
     exp: 4 years
   tasks:
   - name: calling playbooks variables
     ansible.builtin.debug:
-      msg: "employee_name: {{ name }} employee_profression: {{ profression }} employee_exp: {{ exp }}"
+      msg: "employee_name: {{ emp_name }} employee_profression: {{ profression }} employee_exp: {{ exp }}"
 
       
