@@ -3,8 +3,10 @@
   connection: local
   tasks:
   - name : print packages
-    ansible.builtin.debug:
-      msg: " package installed: {{ item }} "
+    ansible.builtin.package:
+      name : " {{ item }}"
+      state: latest
+    msg: " package installed: {{ item }} "
     loop:
     - nginx
     - nodejs
