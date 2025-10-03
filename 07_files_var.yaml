@@ -10,5 +10,5 @@
     ansible.builtin.debug:
       msg: " {{emp_name }} : {{ emp_prof }} "
     ansible.builtin.debug:
-      msg: " {{ team }} : {{ lead_name }}"
+      msg+: " {{ team }} : {{ lead_name }}"
 
