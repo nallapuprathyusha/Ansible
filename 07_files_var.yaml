@@ -3,9 +3,11 @@
   connection: local
 
   vars_files:
-  - variable.yaml
+  - variable.yaml 
+  - variable_task
   tasks:
   - name: callig from another file
     ansible.builtin.debug:
       msg: " {{emp_name }} : {{ emp_prof }} "
+      msg: " {{ team }} : {{ lead_name }}"
 
