@@ -87,7 +87,7 @@
     ansible.builtin.debug:
       msg: " {{emp_name }} : {{ emp_prof }} "
   
-  
+# defining and accessing the variables at run time
   
   
   
