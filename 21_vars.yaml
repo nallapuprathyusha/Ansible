@@ -12,7 +12,13 @@
     fruits:
       - apple
       - banana
-      - orange  
+      - orange 
+  #4. Dictionary Varibles
+    fruit_prices:
+      apple:250
+      banana:100
+      orange:150
+    
   
   tasks:
   - name: Boolean variables
@@ -29,16 +35,16 @@
       msg: |
        " list_variables_are: {{ fruits }} "
        " {{ fruits [0]}} "
+
+  - name: Accessing all Dictionary variables
+    debug:
+      msg: " directory varibales are : {{ fruit_prices }}"
   
-  - name: List variables
-    debug:
-      msg: " {{ fruits [0]}} "
- 
-  - name: Show each fruit individually using loop
-    debug:
-      msg: "{{ item }}"
-    loop:
-      - " list_variables_are: {{ fruits }} "
-      -  " {{ fruits }} "
+  # - name: Show each fruit individually using loop
+  #   debug:
+  #     msg: "{{ item }}"
+  #   loop:
+  #     - " list_variables_are: {{ fruits }} "
+  #     -  " {{ fruits }} "
  
     
