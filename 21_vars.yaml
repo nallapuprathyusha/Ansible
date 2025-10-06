@@ -15,9 +15,9 @@
       - orange 
   #4. Dictionary Varibles
     fruit_prices:
-      apple:250
-      banana:100
-      orange:150
+      apple: 250
+      banana: 100
+      orange: 150
     
   
   tasks:
@@ -42,10 +42,8 @@
 
   - name: Accessing individual specific dictionary variable
     debug:
-        msg: "directory variable is: {{ fruit_prices.apple }}"
-  # - name: Accessing individual specifi  Dictionary variables
-  #   debug:
-  #     msg: " directory varibales are : {{ fruit_prices.apple }}"
+      msg: "directory variable is: {{ fruit_prices.apple }}"
+  
   
   # - name: Show each fruit individually using loop
   #   debug:
