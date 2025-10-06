@@ -19,6 +19,17 @@
       apple: 250
       banana: 100
       orange: 150
+
+  #5. Referencing nested variable
+    fruit_basket:
+    - name: sweety
+      fruits:
+        - apple
+        - orange
+    - name: junnu
+      fruits:
+       - banana
+       - apple
     
   
   tasks:
@@ -49,6 +60,7 @@
     debug:
       msg: " fruit_type: {{ item.key }} cost: {{ item.value }} "
     loop: "{{ fruit_prices | dict2items }}"
+
 # using register variable
   - name: get the price of apple
     debug:
@@ -57,6 +69,10 @@
   - name: print value of register variable
     debug:
       msg: "{{apple_price_as_register_var.msg}}" #to only msg out i.e  "msg": "250" 
+  
+  - name: get the value of apple from the nested variable
+    debug:
+      msg: "{{ fruit_prices.[fruit_basket[0].fruits[0]] }}"
   
   
   
