@@ -34,8 +34,8 @@
   - name: Show all list items (as one string)
     debug:
       msg: |
-       "{{ fruits }} "
-       " {{ fruits [0]}} "
+       "list_variables_are: {{ fruits }}"
+       "{{ fruits [0]}}"
 
   - name: Accessing all Dictionary variables
     debug:
