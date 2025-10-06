@@ -24,13 +24,19 @@
     debug:
       msg: " playbook_variables_are: {{ playbook_variables }} "
   
-  - name: List variables
-    debug:
-      msg: |
-       " list_variables_are: {{ fruits }} "
-       " {{ fruits [0]}} "
+  # - name: List variables
+  #   debug:
+  #     msg: |
+  #      " list_variables_are: {{ fruits }} "
+  #      " {{ fruits [0]}} "
   
   # - name: List variables
   #   debug:
   #     msg: " {{ fruits [0]}} "
+
+    msg: "{{ item }}"
+  loop:
+   - " list_variables_are: {{ fruits }} "
+   - " {{ fruits [0]}} "
+ 
     
