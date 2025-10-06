@@ -9,5 +9,5 @@
   - name: installing httpd web server
     ansible.builtin.package:
       name: httpd
-      state: absent
+      state: present
     when: installing_httpd_flag
