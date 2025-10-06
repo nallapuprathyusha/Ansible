@@ -1,4 +1,4 @@
-- name: pratice
+- name: practice
   hosts: local
   connection: local
   vars:
@@ -13,7 +13,6 @@
       msg: "variables is true"
     when: is_online_classes_available
   
-  # tasks: 
-  # - name: strings from playbook
-  #   debug:
-  #     msg: " playbook_variables_are: {{ playbook_variables }} "
+  - name: strings from playbook
+    debug:
+      msg: " playbook_variables_are: {{ playbook_variables }} "
