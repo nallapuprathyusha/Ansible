@@ -6,8 +6,8 @@
   vars:
     installing_httpd_flag: true
   tasks:
-- name: installing httpd web server
-  ansible.builtin.package:
-    name: httpd
-    state: absent
-  when: installing_httpd_flag
+  - name: installing httpd web server
+    ansible.builtin.package:
+      name: httpd
+      state: absent
+    when: installing_httpd_flag
