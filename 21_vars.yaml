@@ -48,8 +48,7 @@
   - name: Accessing all dictionary variable with loop
     debug:
       msg: " fruit_type: {{ item.key }} cost: {{ item.value }} "
-    loop:
-      " {{ fruit_prices | dict2items }} "
+    loop: "{{ fruit_prices | dict2items }}"
   
   
   
