@@ -33,9 +33,10 @@
   # - name: List variables
   #   debug:
   #     msg: " {{ fruits [0]}} "
-
+  - name: List variables
+    debug:
       msg: "{{ item }}"
-      loop:
+    loop:
       - " list_variables_are: {{ fruits }} "
       -  " {{ fruits [0]}} "
  
