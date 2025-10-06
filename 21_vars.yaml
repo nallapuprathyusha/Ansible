@@ -33,14 +33,13 @@
   
   - name: Show all list items (as one string)
     debug:
-      #msg: .......
-    loop:
-        "{{ fruits }}"
-       #"{{ fruits [0]}}"
+      msg: |
+       " list_variables_are: {{ fruits }} "
+       " {{ fruits [0]}} "
 
   - name: Accessing all Dictionary variables
     debug:
-      msg: " directory varibales are : {{ fruit_prices }}"
+      msg: "directory varibales are : {{ fruit_prices }}"
 
   - name: Accessing individual specific dictionary variable
     debug:
@@ -50,8 +49,13 @@
     debug:
       msg: " fruit_type: {{ item.key }} cost: {{ item.value }} "
     loop: "{{ fruit_prices | dict2items }}"
-
-  
+# using register variable
+  - name: get the price of apple
+    msg: "{{ fruit_prices.apple }}"
+    register: apple_price_as_register_var
+  - name: print value of register variable
+    debug:
+      msg: apple_price_as_register_var
   
   
   
