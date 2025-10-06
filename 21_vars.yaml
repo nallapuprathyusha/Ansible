@@ -24,7 +24,7 @@
     debug:
       msg: " playbook_variables_are: {{ playbook_variables }} "
   
-  - name: List variables
+  - name: Show all list items (as one string)
     debug:
       msg: |
        " list_variables_are: {{ fruits }} "
@@ -33,11 +33,12 @@
   - name: List variables
     debug:
       msg: " {{ fruits [0]}} "
-  - name: List variables
+ 
+  - name: Show each fruit individually using loop
     debug:
       msg: "{{ item }}"
     loop:
       - " list_variables_are: {{ fruits }} "
-      -  " {{ fruits [0]}} "
+      -  " {{ fruits }} "
  
     
