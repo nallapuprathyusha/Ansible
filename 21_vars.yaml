@@ -1,0 +1,8 @@
+- name: pratice
+  hosts: local
+  connection: local
+
+  vars:
+    playbook_variables: "hello i am from playbook"
+    ansible.builtin.debug:
+      mesg: "{{ playbook_variables }}"
