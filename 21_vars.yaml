@@ -75,9 +75,9 @@
     debug:
       msg: "{{ fruit_prices[fruit_basket[1].fruits[2]] }}"
 # using jinga 2 filters on variables
-- name: using jinga filters
-  debug:
-    msg: "{{fruit_prices.keys() | map('upper') | list }}"
+  - name: using jinga filters
+    debug:
+      msg: "{{fruit_prices.keys() | map('upper') | list }}"
   
   
   
