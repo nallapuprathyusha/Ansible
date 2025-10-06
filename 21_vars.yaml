@@ -7,6 +7,13 @@
   
   #2. Boolean variables
     is_online_classes_available: true
+  
+  #3. List varibales
+    fruits:
+      - apple
+      - banana
+      - orange  
+  
   tasks:
   - name: Boolean variables
     debug:
@@ -16,3 +23,8 @@
   - name: strings from playbook
     debug:
       msg: " playbook_variables_are: {{ playbook_variables }} "
+  
+  - name: List variables
+    debug:
+      msg: " lsit_variables_are: {{ fruits }} "
+    
