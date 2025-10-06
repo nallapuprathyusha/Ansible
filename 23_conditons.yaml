@@ -4,7 +4,7 @@
   gather_facts: yes
 
   vars:
-    installing_httpd_flag: true
+    installing_httpd_flag: false
   tasks:
   - name: installing httpd web server
     ansible.builtin.package:
