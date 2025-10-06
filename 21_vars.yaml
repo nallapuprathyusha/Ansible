@@ -6,4 +6,4 @@
   tasks: 
   - name: calling playbook variables 
     ansible.builtin.debug:
-      mesg: "{{ playbook_variables }}"
+      msg: " playbook_variables_are: {{ playbook_variables }} "
