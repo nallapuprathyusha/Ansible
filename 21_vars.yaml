@@ -26,5 +26,6 @@
   
   - name: List variables
     debug:
-      msg: " lsit_variables_are: {{ fruits }} "
+      msg: " list_variables_are: {{ fruits }} "
+      msg: " {{ fruits [0]}} "
     
