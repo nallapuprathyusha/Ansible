@@ -13,7 +13,7 @@
       msg: "variables is true"
     when: is_online_classes_available
   
-  tasks: 
-  - name: strings from playbook
-    debug:
-      msg: " playbook_variables_are: {{ playbook_variables }} "
+  # tasks: 
+  # - name: strings from playbook
+  #   debug:
+  #     msg: " playbook_variables_are: {{ playbook_variables }} "
