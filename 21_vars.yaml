@@ -51,7 +51,8 @@
     loop: "{{ fruit_prices | dict2items }}"
 # using register variable
   - name: get the price of apple
-    msg: "{{ fruit_prices.apple }}"
+    debug:
+      msg: "{{ fruit_prices.apple }}"
     register: apple_price_as_register_var
   - name: print value of register variable
     debug:
