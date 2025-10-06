@@ -31,7 +31,10 @@
        - banana
        - apple
        - orange
-    
+  #6 variable from another file
+    vars_file:
+      - variable.yaml
+
   
   tasks:
   - name: Boolean variables
@@ -74,12 +77,15 @@
   - name: get the value of apple from the nested variable
     debug:
       msg: "{{ fruit_prices[fruit_basket[1].fruits[2]] }}"
+
 # using jinga 2 filters on variables
   - name: using jinga filters
     debug:
       msg: "{{fruit_prices.keys() | map('upper') | list }}"
   
-  
+  - name: callig from another file
+    ansible.builtin.debug:
+      msg: " {{emp_name }} : {{ emp_prof }} "
   
   
   
