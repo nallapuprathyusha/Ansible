@@ -33,9 +33,10 @@
   
   - name: Show all list items (as one string)
     debug:
-      msg: |
-       "{{ fruits }}"
-       "{{ fruits [0]}}"
+      msg: 
+      loop:
+        "{{ fruits }}"
+       #"{{ fruits [0]}}"
 
   - name: Accessing all Dictionary variables
     debug:
@@ -49,6 +50,8 @@
     debug:
       msg: " fruit_type: {{ item.key }} cost: {{ item.value }} "
     loop: "{{ fruit_prices | dict2items }}"
+
+  
   
   
   
