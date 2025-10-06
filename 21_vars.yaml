@@ -40,6 +40,10 @@
     debug:
       msg: " directory varibales are : {{ fruit_prices }}"
   
+  - name: Accessing individual specifi  Dictionary variables
+    debug:
+      msg: " directory varibales are : {{ fruit_prices.apple }}"
+  
   # - name: Show each fruit individually using loop
   #   debug:
   #     msg: "{{ item }}"
