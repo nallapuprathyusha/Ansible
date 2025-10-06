@@ -56,7 +56,7 @@
     register: apple_price_as_register_var
   - name: print value of register variable
     debug:
-      msg: apple_price_as_register_var
+      msg: "{{apple_price_as_register_var}}"
   
   
   
