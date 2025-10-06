@@ -2,8 +2,9 @@
   hosts: local
   connection: local
   vars:
+  #1. string variables
     playbook_variables: hello i am from playbook
   tasks: 
   - name: calling playbook variables 
-    ansible.builtin.debug:
+    debug:
       msg: " playbook_variables_are: {{ playbook_variables }} "
