@@ -14,7 +14,7 @@
   
   - name: combine conditions using ansible gather_facts
     ansible.builtin.debug:
-      msg: " ansible_facts['kernel_version']
+      msg: "{{ ansible_facts['kernel_version'] }}"
     when:
-      - ansible_facts['os_family'] == "RedHat"
-      - ansible_version['vejinja version'] == "3.1.2"
+        - ansible_facts['os_family'] == "RedHat"
+        - ansible_version.string is version('3.1.2', '==')
