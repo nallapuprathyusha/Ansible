@@ -34,7 +34,7 @@
   - name: Show all list items (as one string)
     debug:
       msg: "loop list item"
-      loop:
+    loop:
         "{{ fruits }}"
        #"{{ fruits [0]}}"
 
