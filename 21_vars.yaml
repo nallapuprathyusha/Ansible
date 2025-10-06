@@ -4,7 +4,16 @@
   vars:
   #1. string variables
     playbook_variables: hello i am from playbook
+  
+  #2. Boolean variables
+    is_online_classes_available: true
+  tasks:
+  - name: Boolean variables
+    debug:
+      msg: "variables is true"
+    when: is_online_classes_available
+  
   tasks: 
-  - name: calling playbook variables 
+  - name: strings from playbook
     debug:
       msg: " playbook_variables_are: {{ playbook_variables }} "
