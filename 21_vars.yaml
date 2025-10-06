@@ -3,6 +3,6 @@
   connection: local
 
   vars:
-    playbook_variables: "hello i am from playbook"
+    playbook_variables: hello i am from playbook
     ansible.builtin.debug:
       mesg: "{{ playbook_variables }}"
