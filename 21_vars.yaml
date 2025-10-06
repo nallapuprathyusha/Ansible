@@ -6,7 +6,7 @@
     playbook_variables: hello i am from playbook
   
   #2. Boolean variables
-    is_online_classes_available: false
+    is_online_classes_available: true
   tasks:
   - name: Boolean variables
     debug:
