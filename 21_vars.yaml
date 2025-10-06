@@ -13,6 +13,7 @@
       - apple
       - banana
       - orange 
+  
   #4. Dictionary Varibles
     fruit_prices:
       apple: 250
@@ -43,6 +44,20 @@
   - name: Accessing individual specific dictionary variable
     debug:
       msg: "directory variable is: {{ fruit_prices.apple }}"
+  
+  - name: Accessing all dictionary variable with loop
+    debug:
+      msg: " fruit_type: {{ item.key }} cost: {{ tem.value }} "
+    loop:
+      " {{ fruit_prices | dict2items }} "
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   # - name: Show each fruit individually using loop
