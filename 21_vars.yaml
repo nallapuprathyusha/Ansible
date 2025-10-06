@@ -72,7 +72,11 @@
   
   - name: get the value of apple from the nested variable
     debug:
-      msg: "{{ fruit_prices.[fruit_basket[0].fruits[0]] }}"
+      msg: ✅ Fully Corrected Task (with proper YAML indentation):
+- name: get the value of apple from the nested variable
+  debug: 
+    msg: "{{ fruit_prices[fruit_basket[0].fruits[0]] }}"
+
   
   
   
