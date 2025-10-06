@@ -4,10 +4,17 @@
   gather_facts: yes
 
   vars:
-    installing_httpd_flag: false
+    installing_httpd_flag: true
   tasks:
   - name: installing httpd web server
     ansible.builtin.package:
       name: httpd
       state: present
     when: installing_httpd_flag
+  
+  - name: combine conditions using ansible gather_facts
+    ansible.builtin.debug:
+      msg: " ansible_facts['kernal_version']
+    when:
+      - ansible_facts['os_family'] == "redHat"
+      - ansible_facts['vejinja version'] == "3.1.2"
