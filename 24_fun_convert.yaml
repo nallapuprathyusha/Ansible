@@ -9,17 +9,17 @@
     - orange
     
     vegtables_prices:
-      tomato: "25"
-      onion: "30"
-      chilli: "15"
+      tomato: 25
+      onion: 30
+      chilli: 15
   tasks:
   - name: converting list to map
     ansible.builtin.debug:
-      msg: "converted map is: {{ fruits | items2dict  }}"
+      msg: " converted map is: {{ fruits | items2dict  }} "
 
   - name: converting map to list
     ansible.builtin.debug:
-      msg: "converted list is: {{ vegtables_prices | dict2items }}"
+      msg: " converted list is: {{ vegtables_prices | dict2items }} "
 
     
 #     #list - items
