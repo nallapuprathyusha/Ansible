@@ -3,7 +3,6 @@
   connection: local
 
   vars:
-    technologies: "DevOps, Linux, Shell, Ansible" # string
     name: "Sivakumar reddy M"
     gmail: Info@GMAIL.COM
   tasks:
@@ -15,6 +14,3 @@
     ansible.builtin.debug:
       msg: "{{ gmail | lower }}"
 
-- name: convert uppercasecase
-  ansible.builtin.debug:
-    msg: "{{ technologies | upper }}"
