@@ -11,10 +11,10 @@
     - key: fruit3
       value: orange
     
-  vegtables_prices:
-    tomato: 25
-    onion: 30
-    chilli: 15
+   vegtables_prices:
+      tomato: 25
+      onion: 30
+      chilli: 15
   tasks:
   - name: converting list to map
     ansible.builtin.debug:
