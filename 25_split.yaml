@@ -8,4 +8,4 @@
   tasks:
   - name: adding split filter
     ansible.builtin.debug:
-      msg : "courses: {{ courses | split ( '&'' ) }}"
+      msg : "courses: {{ courses | split ( ',' ) }}"
