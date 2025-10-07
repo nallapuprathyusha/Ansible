@@ -1,0 +1,11 @@
+- name: functions
+  hosts: local
+  connection: local
+
+  vars:
+    courses: devops, linux, aws, ansible, shell_scripting
+
+  tasks:
+  - name: adding split filter
+    ansible.builtin.debug:
+      msg : "courses: {{ courses | split ( '&'' ) }}"
