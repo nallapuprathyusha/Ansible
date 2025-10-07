@@ -1,0 +1,8 @@
+- name: functions
+  hosts: local
+  connection: local
+
+  tasks:
+  - name: printing default variable
+    ansible.builtin.debug:
+      msg: "default vaule is {{ variable | default('ramesh') }}"
