@@ -1,0 +1,20 @@
+- name: functions
+  hosts: local
+  connection: local
+
+  vars:
+    technologies: DevOps, Linux, Shell, Ansible # string
+    name: "Sivakumar reddy M"
+    gmail: Info@GMAIL.COM
+
+- name: convert uppercase
+  ansible.builtin.debug:
+    msg: "{{ name | upper }}"
+
+- name: convert lowercase
+  ansible.builtin.debug:
+    msg: "{{ gmail | lower }}"
+
+- name: convert uppercasecase
+  ansible.builtin.debug:
+    msg: "{{ technologies | upper }}"
