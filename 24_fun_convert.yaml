@@ -1,26 +1,39 @@
+# - name: functions
+#   hosts: local
+#   connection: local
+
+#   vars:
+#     fruits:
+#     - apple
+#     - banana
+#     - orange
+    
+#     vegtables_prices:
+#       tomato: 25
+#       onion: 30
+#       chilli: 15
+#   tasks:
+#   - name: converting list to map
+#     ansible.builtin.debug:
+#       msg: "converted map is: {{ fruits | items2dict  }}"
+
+#   - name: converting map to list
+#     ansible.builtin.debug:
+#       msg: "converted list is: {{ vegtables_prices | dict2items }}"
+
+    
+#     #list - items
+#     #dictonary - dict
+
 - name: functions
   hosts: local
   connection: local
-
   vars:
-    fruits:
-    - apple
-    - banana
-    - orange
-    
-    vegtables_prices:
-      tomato: 25
-      onion: 30
-      chilli: 15
+    tags:  # dictionary == map
+      Application: payment
+      Environment: dev
+  
   tasks:
-  - name: converting list to map
+  - name: convert map to list
     ansible.builtin.debug:
-      msg: "converted map is: {{ fruits | items2dict  }}"
-
-  - name: converting map to list
-    ansible.builtin.debug:
-      msg: "converted list is: {{ vegtables_prices | dict2items }}"
-
-    
-    #list - items
-    #dictonary - dict
+      msg: "Tags are: {{ tags | dict2items }}"
