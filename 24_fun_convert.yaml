@@ -15,8 +15,8 @@
   tasks:
   - name: converting list to map
     ansible.builtin.debug:
-      msg: " converted map is : {{ fruits | list2dict  }}"
+      msg: "converted map is : {{ fruits | list2dict  }}"
 
   - name: converting map to list
     ansible.builtin.debug:
-      msg: " converted list is : {{ vegtables_prices | dict2list }}"
+      msg: "converted list is : {{ vegtables_prices | dict2list }}"
